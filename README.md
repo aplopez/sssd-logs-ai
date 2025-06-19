@@ -15,7 +15,7 @@ This is a transcript of a chat session.
 **Q: Consider this file.**  
 A: I have read the "Log Training Data.md" file. How can I help you with it?
 
-(Provide the ssssd_kcm.log file renamed to sssd_kcm.txt)  
+(Provide the sssd_kcm.log file renamed to sssd_kcm.txt)  
 **Q: Given this KCM log file. How many KCM instances can be detected?**  
 A: Two KCM instances can be detected in the provided log file.
 
