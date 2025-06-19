@@ -4,7 +4,7 @@ Working with large and very large log files is usually problematic. This proof o
 
 The initial idea was to fine-tune a Small Language Model (SLM), but it ended-up being much more simple to access a LLM and use Retrieval Augmented Generation (RAG) on it. Once the training material is complete, we may try to fine-tune a SLM.
 
-In this first try, only KCM logs are recognized. The rest still remains to be done.
+In this **proof of concept**, only KCM logs are recognized. The rest still remains to be done.
 
 We worked with Gemini and provided the training file. Separately we provide the log file and asked questions about it. As Gemini does not accept `.log` files, we were forced to rename them to `.txt`.
 
