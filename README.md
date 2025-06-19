@@ -28,6 +28,9 @@ Errors are not currently detected.
 Configuration errors logged at start-up must be detected.  
 Runtime errors must also be detected.This is a transcript of a chat session.
 
+  * **SLM and Fine-tuning**  
+We are right now using Gemini and RAG. We think using fine-tuning on a Small Language Model will throw better results.
+
 ## Example Chat Transcripts
 
 ### Example 1
