@@ -85,18 +85,11 @@ shutdown was requested by an external entity (usually systemd).
 
 #### Instance
 
-A KCM instance happens between a start-up phase and a shutdown phase, both parts included.
-A log file can include one or several instances.
+KCM instances run one after the other. This makes them easy to identify in the log files.
 
-It might happen that the start-up phase is not present in the log file, in which case the instances happens from the beginning of the file until the first shutdown phase.
+The first KCM instance starts at the beginning of the log file. At every new start-up phase a new KCM instance starts and the previous instance ends. One instance can end because it was shutdown or because it crashed. When it was shutdown, the shutdown phase will be present at its end. If there is no shutdown phase at its end, this means that the KCM instance has crashed.
 
-It could also happens that the shutdown phase is not present in the log file, in which case
-the instance starts in the last start-up phase up to the end of the log file.
-
-I can also happen that neither the start-up phase or the shutdown phase are present, which
-means that the log file covers a single instance.
-
-<!-- Explain the cases of a crash -->
+Only when a KCM instance reaches the end of the log file without a shutdown phase, it may not have crashed. In this case the log file might have been cut to make it shorter or to remove irrelevant information.
 
 ### Client Session
 
